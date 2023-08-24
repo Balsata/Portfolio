@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;700&family=Raleway:wght@400;600&display=swap"
-        rel="stylesheet">
     <link rel="shortcut icon" href="../img/BS.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/about-me.css">
@@ -17,56 +19,66 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="logo">
-                <a href="index.html"><img src="../img/BS.png" alt="" height="40px"></a>
-                <p>Bryan Sáenz</p>
+    <!-- Header Menu  -->
+    <div class="tudo">
+        <header>
+            <div class="container">
+                <div class="menu__header">
+                    <a href="index.html"><img src="../img/BS.png" height="40px"></a>
+                    <h3 class="menu__title">Bryan Sáenz</h3>
+                </div>
+                <div class="menu__title__nav">
+                    <nav>
+                        <ul class="menu__list">
+                            <li class="menu__list__item"><a href="#sobre-mi">Sobre mí</a></li>
+                            <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                            <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                            <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                            <li class="menu__list__item__contato"><a href="#contacto">Contacto</a></li>
+                            <li style="margin-left: 50px;">
+                                <label id="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li style="margin-left: 20px;" class="menu__list__item"><a href="english.html">English</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="nav-bar">
-                <nav>
-                    <ul class="nav-bar-list">
-                        <a href="">
-                            <li>Sobre mí</li>
-                        </a>
-                        <a href="">
-                            <li>Skills</li>
-                        </a>
-                        <a href="">
-                            <li>Formación</li>
-                        </a>
-                        <a href="">
-                            <li>Proyectos</li>
-                        </a>
-                        <a href="" class="contacto">
-                            <li>Contacto</li>
-                        </a>
-                        <li style="margin-left: 50px;">
-                            <label id="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                        <a href="english.html">
-                            <li style="margin-left: 20px;">English</li>
-                        </a>
+        </header>
+        <!-- About me -->
+        <section class="title">
+            <div class="title__div">
+
+                <div class="title__container">
+                    <h2 class="title__bio">Hola, mi nombre es Bryan Sáenz y construyo páginas web</h2>
+                    <h3 class="title__subsection">Soy formado en Ingeniería Mecatrónica, también con especializaciones
+                        en
+                        programación y actualmente formo
+                        parte del proyecto Oracle ONE en Alura Latam.</h3>
+                    <ul class="title__network">
+                        <!-- Enlaces -->
+                        <li class="title__network__item"><a href="https://github.com/Balsata" target="_blank">GitHub
+                                <img src="../img/arrow.png"> </a></li>
+                        <li class="title__network__item"><a href="https://www.linkedin.com/in/bryansaenzt/"
+                                target="_blank">LinkedIn <img src="../img/arrow.png"></a></li>
+                        <li class="title__network__item"><a href="" target="_blank">Currículo <img
+                                    src="..//img/arrow.png"></a></li>
                     </ul>
-                </nav>
+                </div>
+                <img class="title__profile" src="../img/Profiless.png" alt="Imagen de perfil">
             </div>
-        </div>
-    </header>
+        </section>
 
-    <main>
-        <div class="about-me">
-            <p class="about-me-text-main">Hola, mi nombre es Bryan Sáenz y construyo páginas web</p>
-            <p class="about-me-text-sec">Soy formado en Ingeniería Mecatrónica, también con especializaciones en
-                programación y actualmente formo
-                parte del proyecto Oracle ONE en Alura Latam.</p>
-            <img src="../img/Profile.PNG" alt="Imagen de perfil BryanSaenz" class="about-me-img">
-        </div>
-    </main>
 
+
+
+
+    </div>
+
+    <script src="../js/header.js"></script>
 </body>
-<script src="../js/header.js"></script>
 
 </html>

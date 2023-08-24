@@ -1,32 +1,42 @@
-main {
+.title {
   display: flex;
   justify-content: center;
 }
 
-.about-me {
-  background-color: aqua;
+.title__div {
   width: 1136px;
   height: 368px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.about-me-text-main {
-  font-family: "Raleway", sans-serif;
+.title__bio {
   font-weight: 700;
   font-size: 52px;
   color: #464646;
+  margin-bottom: 30px;
 }
 
-.about-me-text-sec {
-  font-family: "Raleway", sans-serif;
+.title__subsection {
   font-weight: 400;
   font-size: 22px;
   color: #464646;
+  margin-bottom: 30px;
 }
 
-.about-me-img {
+.title__profile {
   height: 368px;
   width: 368px;
-  border-radius: 150px;
+}
+
+.title__network {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title__network__item:hover {
+  text-decoration: underline;
 }
