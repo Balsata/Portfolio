@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#38b6ff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <title>Bryan Sáenz | Desarrollador Web</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!-- Preloads para mejora de rendimiento -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        as="style">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aec020f271.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mouse-effects.css">
+    <link rel="stylesheet" href="css/tech-orbit.css">
+</head>
+
+<body class="loaded">
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo"><span>Bryan</span> Sáenz<span></span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bryansaenzt/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Balsata" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/526391286434" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hola mundo, soy Bryan Sáenz</p>
+                <h1 class="hero-title">Ingeniero y <span id="typing-text">Desarrollador de software</span></h1>
+                <p class="hero-description"> Apasionado por transformar ideas en soluciones digitales eficientes,
+                    escalables y centradas en el usuario.
+                    Me especializo en construir aplicaciones web robustas con tecnologías modernas del frontend y
+                    backend.
+                </p>
+                <div class="hero-buttons">
+                    <a href="assets/pdf/CV-Bryan-Saenz.pdf" target="_blank" class="btn">Descargar CV</a>
+                    <a href="#contact" class="btn btn-outline">Contáctame</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/bryansaenzt/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Balsata" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/526391286434" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/me.png" alt="Esteban Molina" class="profile-img">
+                <!-- El sistema de órbitas será insertado aquí por JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="about-card">
+                        <div class="about-header">
+                            <i class="fas fa-user-circle"></i>
+                            <h3>¿Quién soy?</h3>
+                        </div>
+                        <p class="card-text">Soy Bryan Sáenz, Ingeniero en Mecatrónica con una gran pasión por el
+                            desarrollo web.
+                            Me especializo en construir aplicaciones modernas y funcionales, combinando lógica, diseño y
+                            experiencia de usuario.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-header">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Mi objetivo</h3>
+                        </div>
+                        <p class="card-text">Seguir creciendo como desarrollador fullstack, enfrentando nuevos retos en
+                            frontend y backend.
+                            Busco aplicar mis conocimientos para crear soluciones tecnológicas que impacten
+                            positivamente en las personas.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-header">
+                            <i class="fas fa-fingerprint"></i>
+                            <h3>Mi perfil</h3>
+                        </div>
+                        <p class="card-text">Me adapto con facilidad a nuevas tecnologías y entornos de trabajo.
+                            Me distinguen la atención al detalle, la curiosidad constante y el compromiso con la calidad
+                            en cada proyecto.</p>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3 class="skills-title">Mis habilidades técnicas</h3>
+                    <div class="skills-container">
+                        <div class="skill-card">
+                            <i class="fab fa-python skill-icon"></i>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js skill-icon" style="color:#F7DF1E"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-java skill-icon" style="color:#007396"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/c-sharp.png" alt="C#" width="40" style="margin-bottom: 0.5rem;">
+                            <span class="skill-name">C#</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/django.png" alt="Django" width="40" style="margin-bottom: 0.5rem;">
+                            <span class="skill-name">Django</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/express.png" alt="Express.js" width="40" style="margin-bottom: 0.5rem;">
+                            <span class="skill-name">Express.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/spring boot.png" alt="Spring boot" width="40"
+                                style="margin-bottom: 0.5rem;">
+                            <span class="skill-name">SpringBoot</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-html5 skill-icon" style="color:#E34F26"></i>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt skill-icon" style="color:#1572B6"></i>
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-angular skill-icon" style="color:#DD0031"></i>
+                            <span class="skill-name">Angular</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react skill-icon"></i>
+                            <span class="skill-name">React.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-figma skill-icon"></i>
+                            <span class="skill-name">Figma</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-node-js skill-icon" style="color:#339933"></i>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-bootstrap skill-icon"></i>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/tailwind.png" alt="Tailwind" width="40" style="margin-bottom: 0.5rem;">
+                            <span class="skill-name">Tailwind</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database skill-icon" style="color:#00758F"></i>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt skill-icon" style="color:#F05032"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-docker skill-icon"></i>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-aws skill-icon"></i>
+                            <span class="skill-name">AWS</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-linux skill-icon"></i>
+                            <span class="skill-name">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/portfolio.png" alt="Portafolio Profesional" class="project-image">
+                        <div class="image-overlay">
+                            <a href="proyectos/portafolio.html" class="overlay-button" target="_blank">
+                                <i class="fas fa-eye"></i> Ver detalles
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portafolio Profesional</h3>
+                        <p class="project-description">
+                            Sitio personal donde presento mis proyectos, habilidades y experiencia como desarrollador web.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/coinbase.png" alt="Clon de Coinbase" class="project-image">
+                        <div class="image-overlay">
+                            <a href="proyectos/coinbase.html" class="overlay-button" target="_blank">
+                                <i class="fas fa-eye"></i> Ver detalles
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Clon de Coinbase</h3>
+                        <p class="project-description">
+                            Recreación de la página principal de Coinbase usando Figma y diseño responsivo con Sass y Bootstrap.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/conectalocal.png" alt="ContectaLocal" class="project-image">
+                        <div class="image-overlay">
+                            <a href="proyectos/conectalocal.html" class="overlay-button" target="_blank">
+                                <i class="fas fa-eye"></i> Ver detalles
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ContectaLocal</h3>
+                        <p class="project-description">
+                            Plataforma para gestionar solicitudes ciudadanas, con API REST, roles de usuario y reportes en Excel.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/proyecto_becario.webp" alt="Gestor de Tareas API" class="project-image">
+                        <div class="image-overlay">
+                            <a href="proyectos/api-tareas.html" class="overlay-button" target="_blank">
+                                <i class="fas fa-eye"></i> Ver detalles
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Gestor de Tareas API</h3>
+                        <p class="project-description">
+                            API backend con Express.js para gestión de tareas con JWT y validación de datos con Joi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/sisgeta.png" alt="SISGETA Plus" class="project-image">
+                        <div class="image-overlay">
+                            <a href="proyectos/sisgeta.html" class="overlay-button" target="_blank">
+                                <i class="fas fa-eye"></i> Ver detalles
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SISGETA Plus</h3>
+                        <p class="project-description">
+                            Gestor de tareas moderno hecho con Vite, React y Bootstrap, con funciones CRUD y rutas dinámicas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/encriptador.png" alt="Encriptador de Texto" class="project-image">
+                        <div class="image-overlay">
+                            <a href="proyectos/encriptador.html" class="overlay-button" target="_blank">
+                                <i class="fas fa-eye"></i> Ver detalles
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Encriptador de Texto</h3>
+                        <p class="project-description">
+                            Aplicación web en JavaScript que encripta texto reemplazando vocales con patrones definidos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Trabajemos Juntos</h2>
+            <div class="contact-content">
+                <!-- Información -->
+                <div class="contact-info">
+                    <p class="contact-text">
+                        ¿Tienes una idea, proyecto o simplemente quieres conectar? Estoy abierto a colaborar en
+                        propuestas desafiantes que aporten valor.
+                        Escríbeme a través del formulario o mediante mis redes sociales:
+                    </p>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/bryansaenzt/" target="_blank" class="social-icon"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Balsata" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/526391286434" target="_blank" class="social-icon" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario EmailJS -->
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nombre" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Correo Electrónico" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="title" placeholder="Asunto (opcional)" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tu mensaje" class="form-input" required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Enviar Mensaje</button>
+
+                    <div class="form-success-message" style="display: none">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>¡Mensaje Enviado!</h3>
+                        <p>Gracias por contactarme. Te responderé lo antes posible.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/bryansaenzt/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Balsata" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/526391286434" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Inicio</a>
+                <a href="#about">Sobre Mí</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <p class="copyright">© 2025 Bryan Sáenz. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Div para feedback táctil -->
+    <div id="touch-feedback" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;"></div>
+
+    <!-- Partículas de fondo -->
+    <div class="particles" id="particles"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- Script para las partículas optimizado para móviles -->
+    <script>
+        // Detectar si es un dispositivo móvil
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        // Función para crear partículas en el fondo (con ajustes para móviles)
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            // Reducir la cantidad en móviles para mejor rendimiento
+            const numberOfParticles = isMobile ? 20 : 50;
+
+            for (let i = 0; i < numberOfParticles; i++) {
+                const size = Math.random() * (isMobile ? 4 : 5) + 1;
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+
+                // Posición aleatoria
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+
+                // Estilo
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                particle.style.opacity = Math.random() * (isMobile ? 0.4 : 0.5) + 0.1;
+
+                // Añadir al DOM
+                particlesContainer.appendChild(particle);
+
+                // Animación
+                animateParticle(particle);
+            }
+        }
+
+        function animateParticle(particle) {
+            // Movimiento aleatorio (más lento en móviles)
+            const speed = Math.random() * (isMobile ? 15 : 20) + (isMobile ? 5 : 10);
+            const direction = Math.random() * 360;
+            const radians = direction * Math.PI / 180;
+
+            const moveX = Math.cos(radians) * speed;
+            const moveY = Math.sin(radians) * speed;
+
+            // Posición inicial
+            let posX = parseFloat(particle.style.left);
+            let posY = parseFloat(particle.style.top);
+
+            function move() {
+                // Más lento en móviles para mejor rendimiento
+                const factor = isMobile ? 0.007 : 0.01;
+                posX += moveX * factor;
+                posY += moveY * factor;
+
+                // Rebotar en los bordes
+                if (posX < 0 || posX > 100) {
+                    posX = Math.max(0, Math.min(100, posX));
+                }
+                if (posY < 0 || posY > 100) {
+                    posY = Math.max(0, Math.min(100, posY));
+                }
+
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+
+                // Optimización para móviles: usar timeout en vez de requestAnimationFrame directo
+                if (isMobile) {
+                    setTimeout(() => requestAnimationFrame(move), 30);
+                } else {
+                    requestAnimationFrame(move);
+                }
+            }
+
+            move();
+        }
+
+        // Iniciar las partículas cuando se carga el documento
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            // Añadir clase loaded explícitamente
+            document.body.classList.add('loaded');
+
+            // Añadir soporte para efecto táctil en dispositivos móviles
+            if (isMobile) {
+                // Crear efecto de ondas en toques
+                document.addEventListener('touchstart', function (e) {
+                    if (e.target.closest('a, button, .project-card, .skill-card, .social-icon')) {
+                        const touchFeedback = document.getElementById('touch-feedback');
+                        const x = e.touches[0].clientX;
+                        const y = e.touches[0].clientY;
+
+                        // Crear el elemento de efecto
+                        const ripple = document.createElement('div');
+                        ripple.style.position = 'absolute';
+                        ripple.style.width = '20px';
+                        ripple.style.height = '20px';
+                        ripple.style.background = 'rgba(255, 255, 255, 0.4)';
+                        ripple.style.borderRadius = '50%';
+                        ripple.style.transform = 'translate(-50%, -50%)';
+                        ripple.style.left = x + 'px';
+                        ripple.style.top = y + 'px';
+                        ripple.style.animation = 'ripple-effect 0.6s linear';
+
+                        // Agregar al DOM
+                        touchFeedback.appendChild(ripple);
+
+                        // Eliminar después de la animación
+                        setTimeout(() => {
+                            ripple.remove();
+                        }, 600);
+                    }
+                }, false);
+
+                // Estilos para la animación de ondas
+                if (!document.getElementById('ripple-styles')) {
+                    const style = document.createElement('style');
+                    style.id = 'ripple-styles';
+                    style.textContent = `
+                        @keyframes ripple-effect {
+                            0% {
+                                width: 0px;
+                                height: 0px;
+                                opacity: 0.5;
+                            }
+                            100% {
+                                width: 100px;
+                                height: 100px;
+                                opacity: 0;
+                            }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+
+                // Hacer que el menú se cierre al hacer clic fuera
+                document.addEventListener('click', (e) => {
+                    const header = document.getElementById('header');
+                    const menuBtn = document.getElementById('menuBtn');
+
+                    if (header.classList.contains('menu-open') &&
+                        !e.target.closest('.nav-links') &&
+                        !e.target.closest('#menuBtn')) {
+                        header.classList.remove('menu-open');
+                        if (menuBtn.querySelector('i').classList.contains('fa-times')) {
+                            menuBtn.querySelector('i').classList.remove('fa-times');
+                            menuBtn.querySelector('i').classList.add('fa-bars');
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+    <!-- EmailJS SDK + Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contact-form");
+            const successMessage = document.querySelector(".form-success-message");
+            const submitBtn = form.querySelector(".submit-btn");
+
+            // Inicializar EmailJS
+            emailjs.init("K8_6ximFEgp1monY_");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Estado de "enviando"
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+                submitBtn.disabled = true;
+
+                emailjs.sendForm("service_fdu23wp", "template_f6rojz9", form)
+                    .then(function () {
+                        successMessage.style.display = "block";
+
+                        // Ocultar campos y botón
+                        form.querySelectorAll(".form-group").forEach(el => el.style.display = "none");
+                        submitBtn.style.display = "none";
+
+                        form.reset();
+                    }, function (error) {
+                        alert("❌ Ocurrió un error al enviar el mensaje.");
+                        console.error("EmailJS Error:", error);
+
+                        // Restaurar botón
+                        submitBtn.innerHTML = "Enviar Mensaje";
+                        submitBtn.disabled = false;
+                    });
+            });
+        });
+    </script>
+    <script src="js/mouse-effects.js"></script>
+    <script src="js/tech-orbit.js"></script>
+</body>
+
+</html>
