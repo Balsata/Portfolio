@@ -49,3 +49,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // Responsive adjustments
     window.addEventListener('resize', updateSlide);
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Cargar animación inicial del body
+  document.body.classList.add('loaded');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+});
