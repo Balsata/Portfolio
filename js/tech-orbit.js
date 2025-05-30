@@ -15,13 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     const isMobile = isMobileDevice();
-    console.log("¿Dispositivo móvil detectado?", isMobile);
     
     if (!isMobile) {
-        console.log("Configurando sistema orbital para desktop");
         setupOrbitSystem();
     } else {
-        console.log("Dispositivo móvil detectado. Sistema orbital desactivado.");
     }
 });
 
@@ -30,7 +27,6 @@ function setupOrbitSystem() {
     const heroImage = document.querySelector('.hero-image');
     
     if (!heroImage) {
-        console.log("No se encontró el contenedor de imagen de héroe");
         return;
     }
     
@@ -145,10 +141,8 @@ window.addEventListener('resize', function() {
     if (isMobileWidth && orbitContainer) {
         // Si ahora estamos en móvil y el sistema orbital existe, lo eliminamos
         orbitContainer.remove();
-        console.log("Cambiado a móvil - Sistema orbital eliminado");
     } else if (!isMobileWidth && !orbitContainer) {
         // Si ahora estamos en desktop y no hay sistema orbital, lo creamos
-        console.log("Cambiado a desktop - Creando sistema orbital");
         setupOrbitSystem();
     }
 });
