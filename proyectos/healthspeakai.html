@@ -8,7 +8,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <title>Portafolio Profesional | Proyectos</title>
+    <title>HealtSpeak AI | Proyectos</title>
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
 
     <!-- Preloads para mejora de rendimiento -->
@@ -54,15 +54,15 @@
 
     <main class="container project-detail" style="margin-top: 100px;">
         <div class="skills-section" style="padding-bottom: 6rem;">
-            <h1 class="section-title reveal">Portafolio Profesional</h1>
+            <h1 class="section-title reveal">HealtSpeak AI</h1>
             <section class="project-card-detail reveal" style="padding: 0;">
                 <!-- Carrusel de imagenes -->
                 <div class="carousel-container">
                     <div class="carousel-track">
-                        <img src="../assets/images/portfolio.png" alt="Portafolio Profesional">
-                        <img src="../assets/images/sbme.png" alt="Sobre mi">
-                        <img src="../assets/images/proyectos.png" alt="Proyectos destacados">
-                        <img src="../assets/images/contacto.png" alt="Contacto">
+                        <img src="../assets/images/healtspeak.png" alt="Healtspeak AI">
+                        <img src="../assets/images/healtspeakai1.png" alt="Healtspeak AI">
+                        <img src="../assets/images/healtspeakai2.png" alt="Healtspeak AI">
+                        <img src="../assets/images/healtspeakai3.png" alt="Healtspeak AI">
                     </div>
                     <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
                     <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
@@ -71,45 +71,54 @@
                 <div class="project-info reveal">
                     <h2>📝 Descripción</h2>
                     <p>
-                        Este portafolio fue desarrollado desde cero utilizando <strong>HTML5</strong>,
-                        <strong>CSS3</strong> y <strong>JavaScript</strong>. Su propósito es centralizar mis proyectos,
-                        habilidades y medios de contacto de manera profesional, accesible y visualmente atractiva.
+                        <strong>HealthSpeak AI</strong> es una aplicación web avanzada que emplea inteligencia
+                        artificial para
+                        traducir en tiempo real conversaciones médicas multilingües. Utiliza <strong>OpenAI
+                            Whisper</strong> para el
+                        reconocimiento de voz y <strong>OpenAI Translate</strong> para traducciones automáticas,
+                        facilitando la comunicación
+                        entre pacientes y doctores que hablan distintos idiomas.
                     </p>
 
                     <h2>⚙️ Funcionalidades Principales</h2>
                     <ul>
-                        <li>Diseño <strong>100% responsivo</strong>, optimizado para móviles y escritorio.</li>
-                        <li><strong>Sección de proyectos</strong> con tarjetas animadas y botón de detalles.</li>
-                        <li><strong>Carrusel de imágenes</strong> para mostrar capturas del proyecto.</li>
-                        <li><strong>Formulario funcional</strong> de contacto vía <strong>EmailJS</strong>.</li>
-                        <li><strong>Partículas animadas</strong> de fondo y <strong>órbitas interactivas</strong>.
-                        </li>
+                        <li>🎤 Reconocimiento de voz en tiempo real con IA (Whisper API).</li>
+                        <li>🌍 Traducción instantánea con OpenAI Translate.</li>
+                        <li>🔊 Reproducción de audio con voz natural en el idioma destino.</li>
+                        <li>🗁 Historial de conversaciones persistente con <code>localStorage</code>.</li>
+                        <li>📅 Interfaz intuitiva con selector de idiomas y cambio de rol (doctor/paciente).</li>
+                        <li>📅 Modal elegante para confirmación de borrado de historial.</li>
+                        <li>🌐 Traducción de interfaz (i18n) soportando inglés y español.</li>
+                        <li>📩 Formulario de contacto funcional con EmailJS.</li>
                     </ul>
 
                     <h2>🚀 Buenas Prácticas Aplicadas</h2>
                     <ul>
-                        <li>Separación semántica entre estructura (HTML), estilo (CSS) y comportamiento (JS).</li>
-                        <li>Carga diferida de scripts para mejorar el rendimiento inicial.</li>
-                        <li>Tipografía con <code>preload</code> y uso de fuentes web optimizadas.</li>
-                        <li>Animaciones activadas solo al hacer scroll con <strong>Intersection Observer</strong>.
-                        </li>
-                        <li>Consideraciones de <strong>accesibilidad</strong> y navegación intuitiva.</li>
+                        <li>Arquitectura basada en <strong>Clean Architecture</strong> con separación de casos de uso,
+                            entidades y repositorios.</li>
+                        <li>Hooks personalizados para encapsular la lógica de traducción y reconocimiento.</li>
+                        <li>Internacionalización completa con <strong>react-i18next</strong>.</li>
+                        <li>UI responsiva y accesible con <strong>Tailwind CSS</strong>.</li>
                     </ul>
 
                     <h2>🛠️ Tecnologías Utilizadas</h2>
                     <div class="tech-stack reveal">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                        <span>OpenAI API</span>
+                        <span>react-i18next</span>
                         <span>EmailJS</span>
-                        <span>Font Awesome</span>
+                        <span>FontAwesome</span>
                     </div>
 
+
                     <div class="project-links reveal">
-                        <a href="https://github.com/Balsata/Portfolio" target="_blank" class="btn">
+                        <a href="https://github.com/Balsata/healthspeak-ai" target="_blank" class="btn">
                             <i class="fab fa-github"></i> Repositorio
                         </a>
-                        <a href="https://www.bryansaenz.dev/" target="_blank" class="btn btn-outline">
+                        <a href="https://healthspeak-ai.vercel.app/" target="_blank" class="btn btn-outline">
                             <i class="fas fa-external-link-alt"></i> Ver Sitio
                         </a>
                     </div>
